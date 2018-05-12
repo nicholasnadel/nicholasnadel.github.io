@@ -170,6 +170,30 @@ button.navbar-toggler:focus,
   outline: none !important;
   box-shadow: 4px 4px 0 black;
   border: 2px solid black;
+  transition: 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition-property: initial;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition-delay: initial;
+}
+
+.navbar-light .navbar-toggler {
+  color: $dark !important;
+  border: 2px solid $dark !important;
+}
+
+a:active,
+a:focus,
+a:hover {
+  color: $dark;
+  transition: 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition-property: initial;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition-delay: initial;
+  outline: none !important;
+  box-shadow: 4px 4px 0 black;
+  border: 2px solid black;
 }
 
 .btn:focus,
