@@ -114,7 +114,7 @@ a {
 }
 .portfolio-image-wrapper {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-around;
   background-color: #fff;
   max-width: 70%;
@@ -255,4 +255,54 @@ input[type="color"]:focus,
     padding: 0;
     border: 2px solid black;
   }
+}
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+  border: none;
+  box-shadow: none;
+  transition: 1s ease all;
+}
+
+a.carousel-control-next:focus,
+a.carousel-control-next:hover,
+a.carousel-control-prev:focus,
+a.carousel-control-prev:hover {
+  border: none !important;
+  box-shadow: none;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #222 !important;
+  text-align: center;
+  opacity: 0.5;
+}
+
+
+.center-flex {
+  display: flex;
+  flex-align: center;
+  justify-content: center;
+}
+
+.carousel-item.center-flex.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
